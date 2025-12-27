@@ -65,7 +65,7 @@ app.post("/chat", async (req, res) => {
     parts: [{ text: msg.content }],
   }));
   const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash",
+    model: "gemini-2.5-flash-lite",
     contents: contents,
     config: {
       maxOutputTokens: 12000,
